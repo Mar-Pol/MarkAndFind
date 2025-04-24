@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "Mark & Find",
+  "version": "1.0.0",
+  "description": "Quick search for marked text using the shortcut CTRL+SHIFT+F.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs",
+    "contextMenus"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "commands": {
+    "search-google": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F"
+      },
+      "description": "Ctrl+Shift+F"
+    }
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "markandfind@marpol.addon"
+    }
+  }
+}
