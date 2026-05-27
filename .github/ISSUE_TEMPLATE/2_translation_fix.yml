@@ -1,0 +1,40 @@
+name: Translation fix
+description: Report an incorrect or missing translation
+labels: ["translation"]
+body:
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options:
+        - English (en)
+        - Slovak (sk)
+        - Czech (cs)
+        - Polish (pl)
+        - Hungarian (hu)
+        - Ukrainian (uk)
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: language_other
+    attributes:
+      label: If other, specify
+      placeholder: "e.g. German (de)"
+
+  - type: textarea
+    id: corrections
+    attributes:
+      label: Corrections
+      description: List all keys you want to fix. Use the format below, one block per key.
+      placeholder: |
+        Key: operatorHintSite
+        Current: Searches only on the current page domain.
+        Suggested: Limits results to the current website.
+
+        Key: savedMsg
+        Current: Saved
+        Suggested: Settings saved
+    validations:
+      required: true

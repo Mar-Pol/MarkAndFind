@@ -1,0 +1,30 @@
+name: New language
+description: Submit a translation for a new language
+labels: ["translation"]
+body:
+  - type: input
+    id: language
+    attributes:
+      label: Language name
+      placeholder: "e.g. German"
+    validations:
+      required: true
+
+  - type: input
+    id: locale
+    attributes:
+      label: Locale code
+      description: "Reference: https://developer.chrome.com/docs/extensions/reference/i18n/#supported-locales"
+      placeholder: "e.g. de"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: file
+    attributes:
+      label: Translated file
+      description: Attach your translated messages.json file to this issue (drag and drop below).
+      options:
+        - label: I have attached the translated messages.json file
+    validations:
+      required: true
