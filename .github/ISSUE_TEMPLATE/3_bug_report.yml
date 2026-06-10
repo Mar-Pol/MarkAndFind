@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Before opening an issue, read the FAQ:
-        https://github.com/USER/REPO/blob/main/faq.md
+        https://github.com/Mar-Pol/MarkAndFind/blob/main/faq.md
 
   - type: input
     id: version
