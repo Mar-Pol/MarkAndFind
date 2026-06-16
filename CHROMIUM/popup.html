@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark &amp; Find</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <img src="icons/icon.svg" alt="" class="header-icon">
+        <div class="header-text">
+          <span class="header-title">Mark &amp; Find</span>
+          <span class="header-version" id="header-version"></span>
+          <span class="saved-msg" id="saved-msg" data-i18n="savedMsg">Saved</span>
+        </div>
+        <label class="toggle-wrap" id="toggle-label" data-i18n-title="titleToggleEnabled">
+        <input type="checkbox" id="toggle-enabled">
+        <span class="toggle-slider"></span>
+        </label>
+      </div>
+    </header>
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="settings" data-i18n="settingsTab">Settings</button>
+      <button class="tab-btn" data-tab="history" data-i18n="historyTab">History</button>
+      <button class="tab-btn" data-tab="about" data-i18n="aboutTab">About</button>
+    </nav>
+    <!-- SETTINGS TAB -->
+    <section class="tab-content active" id="tab-settings">
+      <!-- Search Engine -->
+      <div class="field-group">
+        <label class="field-label" for="search-engine" data-i18n="labelSearchEngine">Search engine</label>
+        <select id="search-engine"></select>
+      </div>
+      <!-- Custom engine fields -->
+      <div class="field-group card hidden" id="custom-fields">
+        <label class="field-label" for="custom-engine-name" data-i18n="labelCustomName">Engine name</label>
+        <input type="text" id="custom-engine-name" maxlength="32" placeholder="My Search Engine">
+        <label class="field-label mt" for="custom-engine-url" data-i18n="labelCustomUrl">Search URL</label>
+        <input type="text" id="custom-engine-url" placeholder="https://example.com/search?q={query}">
+        <span class="hint warn hidden" id="custom-url-error"></span>
+      </div>
+      <!-- Multi-engine -->
+      <div class="field-group">
+        <div class="row-setting">
+          <div>
+            <span class="field-label inline" data-i18n="labelMultiEngine">Search in multiple engines at once</span>
+            <span class="hint" data-i18n="multiEngineHint">When enabled, overrides the single engine above.</span>
+          </div>
+          <label class="toggle-wrap small">
+          <input type="checkbox" id="multi-engine-toggle">
+          <span class="toggle-slider"></span>
+          </label>
+        </div>
+        <div id="multi-engine-panel" class="hidden">
+          <div class="multi-engine-grid" id="multi-engine-grid"></div>
+          <span class="hint" data-i18n="favoritesHint">★ Star an engine to pin it to the top of the dropdown.</span>
+        </div>
+      </div>
+      <!-- Open in -->
+      <div class="field-group">
+        <label class="field-label" for="open-in" data-i18n="labelOpenIn">Open result in</label>
+        <select id="open-in">
+          <option value="new-tab" data-i18n="openNewTab">New tab (foreground)</option>
+          <option value="background-tab" data-i18n="openBackground">New tab (background)</option>
+          <option value="same-tab" data-i18n="openSameTab">Same tab</option>
+          <option value="private-window" data-i18n="openPrivate">Private window</option>
+        </select>
+        <div class="hint warn hidden" id="private-warn"></div>
+        <span class="hint hidden" id="open-in-multi-hint" data-i18n="openInMultiHint">Same tab is not available when searching multiple engines.</span>
+      </div>
+      <div class="divider"></div>
+      <!-- Auto-search -->
+      <div class="field-group">
+        <div class="row-setting">
+          <div>
+            <span class="field-label inline" data-i18n="labelAutoSearch">Auto-search on selection</span>
+            <span class="hint" data-i18n="autoSearchHint">Automatically searches after you stop selecting text.</span>
+          </div>
+          <label class="toggle-wrap small">
+          <input type="checkbox" id="auto-search">
+          <span class="toggle-slider"></span>
+          </label>
+        </div>
+        <div id="auto-delay-row" class="delay-row hidden">
+          <span class="field-label inline mb0" data-i18n="labelAutoDelay">Delay</span>
+          <div class="delay-input-wrap">
+            <input type="number" id="auto-delay" min="1" max="30" step="1" value="2">
+            <span class="delay-unit" data-i18n="delayUnit">s</span>
+          </div>
+        </div>
+      </div>
+      <!-- Search operator -->
+      <div class="field-group">
+        <div class="row-setting">
+          <div>
+            <span class="field-label inline" data-i18n="labelSearchOperator">Search operator</span>
+            <span class="hint" data-i18n="operatorPanelHint">Add operators to narrow your results. Hover over each for details.</span>
+          </div>
+          <label class="toggle-wrap small">
+          <input type="checkbox" id="operator-toggle">
+          <span class="toggle-slider"></span>
+          </label>
+        </div>
+        <div id="operator-panel" class="operator-panel hidden"></div>
+        <span class="hint" id="operator-hint"></span>
+      </div>
+      <!-- Text cleanup -->
+      <div class="field-group">
+        <div class="row-setting">
+          <div>
+            <span class="field-label inline" data-i18n="labelCleanup">Clean up selected text</span>
+            <span class="hint" data-i18n="cleanupHint">Removes junk characters from selections before searching.</span>
+          </div>
+          <label class="toggle-wrap small">
+          <input type="checkbox" id="cleanup-toggle">
+          <span class="toggle-slider"></span>
+          </label>
+        </div>
+        <div id="cleanup-panel" class="cleanup-panel hidden">
+          <label class="check-item">
+          <input type="checkbox" id="cleanup-whitespace">
+          <span class="check-name" data-i18n="cleanupWhitespace">Remove extra spaces and line breaks</span>
+          </label>
+          <label class="check-item">
+          <input type="checkbox" id="cleanup-locale">
+          <span class="check-name" data-i18n="cleanupLocale">Remove language tag (like EN)</span>
+          </label>
+          <label class="check-item">
+          <input type="checkbox" id="cleanup-separators">
+          <span class="check-name" data-i18n="cleanupSeparators">Remove leading/trailing separators (|, •, –)</span>
+          </label>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <!-- Keyboard shortcut -->
+      <div class="field-group">
+        <label class="field-label" data-i18n="labelShortcut">Keyboard shortcut</label>
+        <div class="shortcut-row" id="shortcut-display"></div>
+        <span class="hint" id="shortcut-hint"></span>
+      </div>
+    </section>
+    <!-- HISTORY TAB -->
+    <section class="tab-content" id="tab-history">
+      <div class="field-group">
+        <div class="row-setting">
+          <div>
+            <span class="field-label inline" data-i18n="labelHistoryEnabled">Save search history</span>
+            <span class="hint" data-i18n="historyEnabledHint">Stores up to 20 recent searches.</span>
+          </div>
+          <label class="toggle-wrap small">
+          <input type="checkbox" id="history-enabled">
+          <span class="toggle-slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div id="history-list"></div>
+    </section>
+    <!-- ABOUT TAB -->
+    <section class="tab-content" id="tab-about">
+      <div class="about-block">
+        <div class="about-logo">
+          <img src="icons/icon.svg" alt="">
+          <div>
+            <p class="about-name">Mark &amp; Find</p>
+            <p class="about-ver" id="about-version"></p>
+          </div>
+        </div>
+        <p class="about-desc" data-i18n="aboutDesc">
+          Search highlighted text instantly in any search engine, based on your own preferences, anywhere on the web.
+        </p>
+        <div class="about-links">
+          <div class="about-links-row">
+            <a href="https://github.com/Mar-Pol/MarkAndFind" target="_blank" class="link-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span data-i18n="linkGithub">GitHub</span>
+            </a>
+            <a href="https://marpol.pages.dev" target="_blank" class="link-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              <span data-i18n="linkWebsite">Website</span>
+            </a>
+          </div>
+          <div class="about-links-row about-links-row--secondary">
+            <a href="https://github.com/Mar-Pol/MarkAndFind/wiki/Privacy-Policy" target="_blank" class="link-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              <span data-i18n="privacyPolicy">Privacy Policy</span>
+            </a>
+            <div class="link-btn-pair">
+              <a href="https://github.com/Mar-Pol/MarkAndFind#readme" target="_blank" class="link-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                </svg>
+                <span>README</span>
+              </a>
+              <a href="https://github.com/Mar-Pol/MarkAndFind/blob/main/faq.md" target="_blank" class="link-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                  <path d="M12 17h.01"/>
+                </svg>
+                <span>FAQ</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="about-contribute">
+          <p class="about-contribute-title" data-i18n="contributeTitle">Found a bug or want to help?</p>
+          <p class="about-contribute-desc" data-i18n="contributeDesc">Report a bug or contribute a new language.</p>
+          <a href="https://github.com/Mar-Pol/MarkAndFind/issues/new/choose" target="_blank" class="link-btn link-btn--full link-btn--neutral">
+            <svg viewBox="0 0 16 16" fill="currentColor" width="13" height="13">
+              <path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm9 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-.25-6.25a.75.75 0 0 0-1.5 0v3.5a.75.75 0 0 0 1.5 0v-3.5z"/>
+            </svg>
+            <span data-i18n="contributeIssueBtn">Open an Issue on GitHub</span>
+          </a>
+        </div>
+        <div class="about-io">
+          <button id="btn-options" class="link-btn link-btn--full" data-i18n="btnOpenSettings">More settings</button>
+        </div>
+        <p class="about-trademark" data-i18n="aboutTrademark">All trademarks, logos and brand names are the property of their respective owners. Search engine icons are used for identification purposes only.</p>
+        <p class="copyright">&copy; 2025&ndash;2026 MarPol</p>
+      </div>
+    </section>
+    <script src="browser-polyfill.min.js"></script>
+    <script src="popup/index.js" type="module"></script>
+    <template id="svg-info">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/>
+        <path d="M12 9h.01"/>
+        <path d="M11 12h1v4h1"/>
+      </svg>
+    </template>
+    <template id="svg-warn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9"/>
+        <path d="M12 8v4"/>
+        <path d="M12 16h.01"/>
+      </svg>
+    </template>
+  </body>
+</html>

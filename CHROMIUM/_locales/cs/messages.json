@@ -1,0 +1,409 @@
+{
+  "extDescription": {
+    "message": "Vyhledávej označený text okamžitě v libovolném vyhledávači, podle vlastních preferencí, kdekoliv na webu.",
+    "description": "Extension description shown in browser add-on store"
+  },
+  "cmdSearch": {
+    "message": "Vyhledat označený text",
+    "description": "Description of the keyboard command"
+  },
+  "contextMenuSearch": {
+    "message": "Vyhledat „%s“",
+    "description": "Context menu item. %s is replaced with selected text by the browser."
+  },
+  "contextMenuSearchSelected": {
+    "message": "Hledat „$1“",
+    "description": "Context menu title with truncated selected text"
+  },
+  "settingsTab": {
+    "message": "Nastavení",
+    "description": "Settings tab label"
+  },
+  "historyTab": {
+    "message": "Historie",
+    "description": "History tab label"
+  },
+  "aboutTab": {
+    "message": "O rozšíření",
+    "description": "About tab label"
+  },
+  "titleToggleEnabled": {
+    "message": "Zapnout / Vypnout",
+    "description": "Tooltip for the main enable/disable toggle in the popup header"
+  },
+  "restrictedPageNotice": {
+    "message": "Klávesová zkratka a automatické vyhledávání nejsou na této stránce dostupné.",
+    "description": "Banner shown in popup when the current tab is a restricted browser page"
+  },
+  "operaSearchPermissionNotice": {
+    "message": "Klávesová zkratka nemusí fungovat bez oprávnění. V Opeře otevři opera://extensions a pro toto rozšíření povol „Povolit přístup k výsledkům prohledávaní stránek“.",
+    "description": "Banner shown when Opera blocks content script on search pages. Keep opera://extensions in the text as-is, it will be turned into a clickable link."
+  },
+  "labelSearchEngine": {
+    "message": "Vyhledávač",
+    "description": "Label for search engine selector"
+  },
+  "groupCoreWebSearch": {
+    "message": "Základní vyhledávače",
+    "description": "Search engine group"
+  },
+  "groupPrivacy": {
+    "message": "Se zaměřením na soukromí",
+    "description": "Search engine optgroup label"
+  },
+  "groupKnowledge": {
+    "message": "Znalostní",
+    "description": "Search engine optgroup label"
+  },
+  "groupMedia": {
+    "message": "Média",
+    "description": "Search engine optgroup label"
+  },
+  "groupDeveloper": {
+    "message": "Pro vývojáře",
+    "description": "Search engine group"
+  },
+  "groupCommunity": {
+    "message": "Komunita",
+    "description": "Search engine group"
+  },
+  "groupAI": {
+    "message": "AI",
+    "description": "Search engine group"
+  },
+  "groupRegional": {
+    "message": "Regionální",
+    "description": "Search engine group"
+  },
+  "groupCustom": {
+    "message": "Vlastní",
+    "description": "Search engine optgroup label"
+  },
+  "customOption": {
+    "message": "Vlastní vyhledávač...",
+    "description": "Option inside the custom engine optgroup"
+  },
+  "kagiOption": {
+    "message": "Kagi (placený)",
+    "description": "Kagi option label in single engine dropdown"
+  },
+  "groupFavorites": {
+    "message": "Oblíbené",
+    "description": "Favorites group label"
+  },
+  "favoritesHint": {
+    "message": "★ Hvězdičkou se vyhledávač připne na začátek seznamu.",
+    "description": "Hint for favorites feature"
+  },
+  "btnToggleFavorite": {
+    "message": "Přepnout oblíbené",
+    "description": "Tooltip for the star button next to each engine in the multi-engine list"
+  },
+  "btnExportSettings": {
+    "message": "Exportovat nastavení",
+    "description": "Button to export settings as JSON"
+  },
+  "btnImportSettings": {
+    "message": "Importovat nastavení",
+    "description": "Button to import settings from JSON file"
+  },
+  "btnOpenSettings": {
+    "message": "Otevřít nastavení",
+    "description": "Button in popup About tab that opens the options page"
+  },
+  "labelOpenIn": {
+    "message": "Kde otevřít výsledek?",
+    "description": "Label for open-in selector"
+  },
+  "openNewTab": {
+    "message": "Nová karta (v popředí)",
+    "description": "Open in new foreground tab"
+  },
+  "openBackground": {
+    "message": "Nová karta (na pozadí)",
+    "description": "Open in new background tab"
+  },
+  "openSameTab": {
+    "message": "Stejná karta",
+    "description": "Open in same tab"
+  },
+  "openPrivate": {
+    "message": "Soukromé okno",
+    "description": "Open in private/incognito window"
+  },
+  "privateWarnFirefox": {
+    "message": "Soukromé okno vyžaduje povolení. Otevři Správce doplňků, najdi MarkAndFind a povol možnost „Spustit v soukromých oknech“.",
+    "description": "Warning shown when private window is selected on Firefox"
+  },
+  "privateWarnChrome": {
+    "message": "Soukromé (inkognito) okno vyžaduje povolení. Otevři nastavení rozšíření prohlížeče, najdi MarkAndFind a povol přístup k inkognito nebo soukromým oknům.",
+    "description": "Warning shown when private window is selected on Chromium based browsers"
+  },
+  "openInMultiHint": {
+    "message": "Možnost „Stejná karta“ není dostupná při vyhledávání ve více vyhledávačích najednou.",
+    "description": "Hint shown under Open-in select when multi-engine mode is active"
+  },
+  "labelShortcut": {
+    "message": "Klávesová zkratka",
+    "description": "Label for shortcut section"
+  },
+  "shortcutDefault": {
+    "message": "Výchozí zkratka: Ctrl+Shift+F",
+    "description": "Static hint shown below keyboard shortcut section"
+  },
+  "btnChangeShortcut": {
+    "message": "Změnit",
+    "description": "Button to open browser shortcut manager"
+  },
+  "shortcutClearedBtn": {
+    "message": "Žádná zkratka není nastavena. Kliknutím otevřeš nastavení zkratek.",
+    "description": "Text shown inside shortcut button when shortcut is cleared"
+  },
+  "shortcutManualHint": {
+    "message": "Zkratku změníš v nastavení rozšíření prohlížeče v části klávesové zkratky.",
+    "description": "Fallback hint shown when browser blocks opening the shortcuts page."
+  },
+  "shortcutSettingsNotSupported": {
+    "message": "Otevření nastavení zkratek váš prohlížeč nepodporuje. Přejdi na: Nabídka → Doplňky → Ikona ozubeného kola → Spravovat klávesové zkratky rozšíření.",
+    "description": "Error message shown in the popup when the browser version is too old to natively support opening the shortcut configuration settings directly."
+  },
+  "labelAutoSearch": {
+    "message": "Automaticky vyhledávat po označení",
+    "description": "Label for auto-search toggle"
+  },
+  "autoSearchHint": {
+    "message": "Automaticky vyhledá po dokončení označování textu.",
+    "description": "Hint for auto-search feature"
+  },
+  "labelAutoDelay": {
+    "message": "Zpoždění",
+    "description": "Label for auto-search delay input"
+  },
+  "delayUnit": {
+    "message": "s",
+    "description": "Seconds unit label next to delay input"
+  },
+  "labelSearchOperator": {
+    "message": "Operátor vyhledávání",
+    "description": "Label for search operator selector"
+  },
+  "operatorPanelHint": {
+    "message": "Přidej operátory pro upřesnění výsledků. Podrobnosti zobrazíš najetím kurzoru na jednotlivé možnosti.",
+    "description": "Hint below the search operator toggle"
+  },
+  "operatorUnavailable": {
+    "message": "Vybraný vyhledávač tuto možnost nepodporuje.",
+    "description": "Hint shown when the selected operator is not available for current engine"
+  },
+  "operatorSite": {
+    "message": "Pouze aktuální doména",
+    "description": "site: operator option"
+  },
+  "operatorHintSite": {
+    "message": "Vyhledává pouze v rámci domény aktuální stránky.",
+    "description": "Hint for site: operator"
+  },
+  "operatorIntitle": {
+    "message": "Klíčové slovo v názvu stránky",
+    "description": "intitle: operator option"
+  },
+  "operatorHintIntitle": {
+    "message": "Zobrazí stránky, v jejichž názvu se nachází označený text.",
+    "description": "Hint for intitle: operator"
+  },
+  "operatorInurl": {
+    "message": "Klíčové slovo v URL",
+    "description": "inurl: operator option"
+  },
+  "operatorHintInurl": {
+    "message": "Zobrazí stránky, jejichž URL obsahuje označený text.",
+    "description": "Hint for inurl: operator"
+  },
+  "operatorFiletype": {
+    "message": "Hledat podle typu souboru",
+    "description": "filetype: operator option"
+  },
+  "operatorHintFiletype": {
+    "message": "Označ text a vyhledej soubory daného typu (např. PDF, DOC nebo TXT).",
+    "description": "Hint for filetype: operator"
+  },
+  "operatorExact": {
+    "message": "Přesná shoda fráze",
+    "description": "exact phrase operator option"
+  },
+  "operatorHintExact": {
+    "message": "Označený text uzavře do uvozovek pro vyhledávání přesné fráze.",
+    "description": "Hint for exact operator"
+  },
+  "operatorGoogleSectionLabel": {
+    "message": "Pouze Google",
+    "description": "Divider label for Google-specific operators section"
+  },
+  "operatorNoai": {
+    "message": "Vyloučit výsledky AI",
+    "description": "-AI operator, Google only"
+  },
+  "operatorHintNoai": {
+    "message": "Přidá -\"AI\" pro vyloučení výsledků generovaných umělou inteligencí.",
+    "description": "Hint for -AI operator"
+  },
+  "operatorUdm14": {
+    "message": "Pouze webové výsledky",
+    "description": "udm=14 operator label, Google only"
+  },
+  "operatorHintUdm14": {
+    "message": "Zobrazuje pouze tradiční webové odkazy. Žádné přehledy AI, znalostní panely ani nákupní karty.",
+    "description": "Hint for udm=14 operator"
+  },
+  "labelCleanup": {
+    "message": "Vyčistit označený text"
+  },
+  "cleanupHint": {
+    "message": "Před vyhledáváním odstraní z označeného textu nežádoucí znaky."
+  },
+  "cleanupWhitespace": {
+    "message": "Odstranit nadbytečné mezery a zalomení řádků"
+  },
+  "cleanupLocale": {
+    "message": "Odstranit jazykovou značku (např. EN)"
+  },
+  "cleanupSeparators": {
+    "message": "Odstranit oddělovače na začátku/konci (|, •, –)"
+  },
+  "labelMultiEngine": {
+    "message": "Vyhledávat ve více vyhledávačích najednou",
+    "description": "Label for multi-engine section"
+  },
+  "multiEngineHint": {
+    "message": "Po zapnutí nahradí jednotlivý vyhledávač uvedený výše.",
+    "description": "Hint for multi-engine toggle"
+  },
+  "labelCustomName": {
+    "message": "Název vyhledávače",
+    "description": "Label for custom engine name input"
+  },
+  "labelCustomUrl": {
+    "message": "URL pro vyhledávání",
+    "description": "Label for custom engine URL input"
+  },
+  "customUrlErrInvalid": {
+    "message": "Neplatná URL adresa. Musí začínat na https:// nebo http://",
+    "description": "Validation error when custom URL is not a valid URL"
+  },
+  "customUrlErrProtocol": {
+    "message": "URL musí začínat na https:// nebo http://",
+    "description": "Validation error when custom URL has wrong protocol"
+  },
+  "customUrlErrNoQuery": {
+    "message": "URL by měla obsahovat {query} nebo končit parametrem jako ?q=",
+    "description": "Validation error when custom URL has no query hook"
+  },
+  "labelHistoryEnabled": {
+    "message": "Ukládat historii vyhledávání",
+    "description": "Label for history toggle"
+  },
+  "historyEnabledHint": {
+    "message": "Ukládá posledních 20 vyhledávání.",
+    "description": "Hint for history toggle"
+  },
+  "historyEmpty": {
+    "message": "Zatím žádná vyhledávání.",
+    "description": "Empty state for history tab"
+  },
+  "historyClear": {
+    "message": "Vymazat historii",
+    "description": "Button to clear search history"
+  },
+  "btnDeleteHistoryItem": {
+    "message": "Smazat",
+    "description": "Tooltip for the delete button on an individual history item"
+  },
+  "historyTimeNow": {
+    "message": "právě teď",
+    "description": "History timestamp: shown when a search was done less than a minute ago"
+  },
+  "historyTimeMinutes": {
+    "message": "$1 min",
+    "description": "History timestamp: minutes ago. $1 is replaced with the number of minutes"
+  },
+  "historyTimeHours": {
+    "message": "$1 h",
+    "description": "History timestamp: hours ago. $1 is replaced with the number of hours"
+  },
+  "savedMsg": {
+    "message": "Uloženo",
+    "description": "Short confirmation shown after settings are saved"
+  },
+  "aboutName": {
+     "message": "Mark & Find — Nastavení",
+     "description": "About tab label"
+  },
+  "aboutDesc": {
+    "message": "Označ libovolný text na webové stránce a okamžitě ho vyhledej klávesovou zkratkou nebo kontextovým menu.",
+    "description": "About tab description paragraph"
+  },
+  "aboutVersion": {
+    "message": "Verze",
+    "description": "Version label in About tab"
+  },
+  "aboutTrademark": {
+    "message": "Všechny ochranné známky, loga a názvy značek jsou majetkem jejich příslušných vlastníků. Ikony vyhledávačů jsou použity výhradně pro účely identifikace.",
+    "description": "Trademark disclaimer"
+  },
+  "contributeTitle": {
+    "message": "Našel jsi chybu nebo chceš pomoci?",
+    "description": "Heading for contribute section"
+  },
+  "contributeDesc": {
+    "message": "Nahlás chybu nebo přispěj novým jazykem.",
+    "description": "Description for contribute section"
+  },
+  "contributeIssueBtn": {
+    "message": "Otevřít nový problém na GitHubu",
+    "description": "Button linking to GitHub Issues"
+  },
+  "linkGithub": {
+    "message": "GitHub",
+    "description": "GitHub link label"
+  },
+  "linkWebsite": {
+    "message": "Webové stránky",
+    "description": "Website link label"
+  },
+  "privacyPolicy": {
+    "message": "Zásady ochrany soukromí",
+    "description": "Privacy policy link label"
+  },
+  "importSuccess": {
+    "message": "Nastavení bylo úspěšně importováno.",
+    "description": "Confirmation shown after successful import"
+  },
+  "importError": {
+    "message": "Neplatný soubor. Vyberte prosím platný soubor nastavení.",
+    "description": "Error shown after failed import"
+  },
+  "optionsShortcutLabel": {
+    "message": "Vaše zkratka",
+    "description": "Label next to the shortcut display in options page"
+  },
+  "optionsShortcutImported": {
+    "message": "Tato zkratka byla uložena z předchozího exportu. Vaše skutečná zkratka se může lišit — ověřte ji ve Správci doplňků.",
+    "description": "Note shown when shortcut in options page comes from imported settings"
+  },
+  "optionsShortcutMatch": {
+    "message": "Exportovaná zkratka odpovídá té aktuální. Změnit ji můžeš v rozšíření MarkAndFind nebo přímo ve Správci doplňků prohlížeče → Spravovat klávesové zkratky rozšíření.",
+    "description": "Note shown when imported shortcut matches the current one"
+  },
+  "btnResetSettings": {
+    "message": "Obnovit výchozí nastavení",
+    "description": "Button to reset all settings to their default values"
+  },
+  "resetConfirm": {
+    "message": "Potvrď obnovení kliknutím sem",
+    "description": "Confirmation text shown on reset button after first click (3 s window)"
+  },
+  "resetSuccess": {
+    "message": "Nastavení bylo obnoveno na výchozí hodnoty.",
+    "description": "Status message shown after a successful reset"
+  }
+}
