@@ -1,0 +1,409 @@
+{
+  "extDescription": {
+    "message": "Keress rá a kijelölt szövegre azonnal, bármely keresőben, saját beállításaid szerint, bárhol az interneten.",
+    "description": "Extension description shown in browser add-on store"
+  },
+  "cmdSearch": {
+    "message": "Kijelölt szöveg keresése",
+    "description": "Description of the keyboard command"
+  },
+  "contextMenuSearch": {
+    "message": "„%s“ keresése",
+    "description": "Context menu item. %s is replaced with selected text by the browser."
+  },
+  "contextMenuSearchSelected": {
+    "message": "Keresés: „$1“",
+    "description": "Context menu title with truncated selected text"
+  },
+  "settingsTab": {
+    "message": "Beállítások",
+    "description": "Settings tab label"
+  },
+  "historyTab": {
+    "message": "Előzmények",
+    "description": "History tab label"
+  },
+  "aboutTab": {
+    "message": "A bővítményről",
+    "description": "About tab label"
+  },
+  "titleToggleEnabled": {
+    "message": "Engedélyezés / Letiltás",
+    "description": "Tooltip for the main enable/disable toggle in the popup header"
+  },
+  "restrictedPageNotice": {
+    "message": "A billentyűparancs és az automatikus keresés ezen az oldalon nem érhető el.",
+    "description": "Banner shown in popup when the current tab is a restricted browser page"
+  },
+  "operaSearchPermissionNotice": {
+    "message": "A billentyűparancs engedély nélkül esetleg nem működik. Az Operában nyisd meg az opera://extensions oldalt, és engedélyezd a „Hozzáférés engedélyezése a keresési eredményekhez“ opciót ennél a bővítménynél.",
+    "description": "Banner shown when Opera blocks content script on search pages. Keep opera://extensions in the text as-is, it will be turned into a clickable link."
+  },
+  "labelSearchEngine": {
+    "message": "Keresőmotor",
+    "description": "Label for search engine selector"
+  },
+  "groupCoreWebSearch": {
+    "message": "Általános keresők",
+    "description": "Search engine group"
+  },
+  "groupPrivacy": {
+    "message": "Adatvédelemre összpontosítva",
+    "description": "Search engine optgroup label"
+  },
+  "groupKnowledge": {
+    "message": "Tudásbázis",
+    "description": "Search engine optgroup label"
+  },
+  "groupMedia": {
+    "message": "Média",
+    "description": "Search engine optgroup label"
+  },
+  "groupDeveloper": {
+    "message": "Fejlesztőknek",
+    "description": "Search engine group"
+  },
+  "groupCommunity": {
+    "message": "Közösség",
+    "description": "Search engine group"
+  },
+  "groupAI": {
+    "message": "AI",
+    "description": "Search engine group"
+  },
+  "groupRegional": {
+    "message": "Regionális",
+    "description": "Search engine group"
+  },
+  "groupCustom": {
+    "message": "Egyéni",
+    "description": "Search engine optgroup label"
+  },
+  "customOption": {
+    "message": "Egyéni keresőmotor…",
+    "description": "Option inside the custom engine optgroup"
+  },
+  "kagiOption": {
+    "message": "Kagi (fizetős)",
+    "description": "Kagi option label in single engine dropdown"
+  },
+  "groupFavorites": {
+    "message": "Kedvencek",
+    "description": "Favorites group label"
+  },
+  "favoritesHint": {
+    "message": "★ A csillaggal a keresőmotor a lista elejére kerül.",
+    "description": "Hint for favorites feature"
+  },
+  "btnToggleFavorite": {
+    "message": "Kedvenc ki-/bekapcsolása",
+    "description": "Tooltip for the star button next to each engine in the multi-engine list"
+  },
+  "btnExportSettings": {
+    "message": "Beállítások exportálása",
+    "description": "Button to export settings as JSON"
+  },
+  "btnImportSettings": {
+    "message": "Beállítások importálása",
+    "description": "Button to import settings from JSON file"
+  },
+  "btnOpenSettings": {
+    "message": "Beállítások megnyitása",
+    "description": "Button in popup About tab that opens the options page"
+  },
+  "labelOpenIn": {
+    "message": "Hol nyíljon meg az eredmény?",
+    "description": "Label for open-in selector"
+  },
+  "openNewTab": {
+    "message": "Új lap (előtérben)",
+    "description": "Open in new foreground tab"
+  },
+  "openBackground": {
+    "message": "Új lap (háttérben)",
+    "description": "Open in new background tab"
+  },
+  "openSameTab": {
+    "message": "Ugyanebben a lapban",
+    "description": "Open in same tab"
+  },
+  "openPrivate": {
+    "message": "Privát ablak",
+    "description": "Open in private/incognito window"
+  },
+  "privateWarnFirefox": {
+    "message": "A privát ablak engedélyt igényel. Nyisd meg a Kiegészítőkezelőt, keresd meg a MarkAndFind bővítményt, és engedélyezd a „Futtatás privát ablakokban“ lehetőséget.",
+    "description": "Warning shown when private window is selected on Firefox"
+  },
+  "privateWarnChrome": {
+    "message": "Az inkognító ablak engedélyt igényel. Nyisd meg a böngésző bővítménybeállításait, keresd meg a MarkAndFind bővítményt, és engedélyezd a hozzáférést az inkognító vagy privát ablakokhoz.",
+    "description": "Warning shown when private window is selected on Chromium based browsers"
+  },
+  "openInMultiHint": {
+    "message": "Az „Ugyanebben a lapban“ lehetőség nem érhető el több keresőmotorban való egyidejű keresés esetén.",
+    "description": "Hint shown under Open-in select when multi-engine mode is active"
+  },
+  "labelShortcut": {
+    "message": "Billentyűparancs",
+    "description": "Label for shortcut section"
+  },
+  "shortcutDefault": {
+    "message": "Alapértelmezett parancs: Ctrl+Shift+F",
+    "description": "Static hint shown below keyboard shortcut section"
+  },
+  "btnChangeShortcut": {
+    "message": "Módosítás",
+    "description": "Button to open browser shortcut manager"
+  },
+  "shortcutClearedBtn": {
+    "message": "Nincs beállítva billentyűparancs. Kattints a parancsbeállítások megnyitásához.",
+    "description": "Text shown inside shortcut button when shortcut is cleared"
+  },
+  "shortcutManualHint": {
+    "message": "A parancsot a böngésző bővítménybeállításaiban, a Billentyűparancsok résznél módosíthatod.",
+    "description": "Fallback hint shown when browser blocks opening the shortcuts page."
+  },
+  "shortcutSettingsNotSupported": {
+    "message": "A böngésződ nem támogatja a parancsbeállítások közvetlen megnyitását. Lépj ide: Menü → Kiegészítők → Fogaskerék ikon → Bővítmények billentyűparancsainak kezelése.",
+    "description": "Error message shown in the popup when the browser version is too old to natively support opening the shortcut configuration settings directly."
+  },
+  "labelAutoSearch": {
+    "message": "Automatikus keresés kijelölés után",
+    "description": "Label for auto-search toggle"
+  },
+  "autoSearchHint": {
+    "message": "Automatikusan keres, amint befejezted a szöveg kijelölését.",
+    "description": "Hint for auto-search feature"
+  },
+  "labelAutoDelay": {
+    "message": "Késleltetés",
+    "description": "Label for auto-search delay input"
+  },
+  "delayUnit": {
+    "message": "s",
+    "description": "Seconds unit label next to delay input"
+  },
+  "labelSearchOperator": {
+    "message": "Keresési operátor",
+    "description": "Label for search operator selector"
+  },
+  "operatorPanelHint": {
+    "message": "Adj hozzá operátorokat az eredmények szűkítéséhez. A részleteket az egyes lehetőségek fölé húzva tekintheted meg.",
+    "description": "Hint below the search operator toggle"
+  },
+  "operatorUnavailable": {
+    "message": "A kiválasztott keresőmotor nem támogatja ezt a lehetőséget.",
+    "description": "Hint shown when the selected operator is not available for current engine"
+  },
+  "operatorSite": {
+    "message": "Csak az aktuális domain",
+    "description": "site: operator option"
+  },
+  "operatorHintSite": {
+    "message": "Csak az aktuális oldal domainjén belül keres.",
+    "description": "Hint for site: operator"
+  },
+  "operatorIntitle": {
+    "message": "Kulcsszó az oldal címében",
+    "description": "intitle: operator option"
+  },
+  "operatorHintIntitle": {
+    "message": "Azokat az oldalakat jeleníti meg, amelyek címében szerepel a kijelölt szöveg.",
+    "description": "Hint for intitle: operator"
+  },
+  "operatorInurl": {
+    "message": "Kulcsszó az URL-ben",
+    "description": "inurl: operator option"
+  },
+  "operatorHintInurl": {
+    "message": "Azokat az oldalakat jeleníti meg, amelyek URL-jében szerepel a kijelölt szöveg.",
+    "description": "Hint for inurl: operator"
+  },
+  "operatorFiletype": {
+    "message": "Keresés fájltípus szerint",
+    "description": "filetype: operator option"
+  },
+  "operatorHintFiletype": {
+    "message": "Jelölj ki szöveget, és keress adott típusú fájlokat (pl. PDF, DOC vagy TXT).",
+    "description": "Hint for filetype: operator"
+  },
+  "operatorExact": {
+    "message": "Pontos egyezés",
+    "description": "exact phrase operator option"
+  },
+  "operatorHintExact": {
+    "message": "A kijelölt szöveget idézőjelbe teszi a pontos kifejezés kereséséhez.",
+    "description": "Hint for exact operator"
+  },
+  "operatorGoogleSectionLabel": {
+    "message": "Csak Google",
+    "description": "Divider label for Google-specific operators section"
+  },
+  "operatorNoai": {
+    "message": "AI eredmények kizárása",
+    "description": "-AI operator, Google only"
+  },
+  "operatorHintNoai": {
+    "message": "Hozzáfűzi a -\"AI\" kifejezést a mesterséges intelligencia által generált eredmények kizárásához.",
+    "description": "Hint for -AI operator"
+  },
+  "operatorUdm14": {
+    "message": "Csak webes találatok",
+    "description": "udm=14 operator label, Google only"
+  },
+  "operatorHintUdm14": {
+    "message": "Csak hagyományos webes hivatkozásokat jelenít meg. Nincsenek AI-összefoglalók, tudáspanelek vagy vásárlási kártyák.",
+    "description": "Hint for udm=14 operator"
+  },
+  "labelCleanup": {
+    "message": "Kijelölt szöveg megtisztítása"
+  },
+  "cleanupHint": {
+    "message": "Keresés előtt eltávolítja a nem kívánt karaktereket a kijelölt szövegből."
+  },
+  "cleanupWhitespace": {
+    "message": "Felesleges szóközök és sortörések eltávolítása"
+  },
+  "cleanupLocale": {
+    "message": "Nyelvi jelölő eltávolítása (pl. EN)"
+  },
+  "cleanupSeparators": {
+    "message": "Elválasztók eltávolítása az elejéről/végéről (|, •, –)"
+  },
+  "labelMultiEngine": {
+    "message": "Keresés több keresőmotorban egyszerre",
+    "description": "Label for multi-engine section"
+  },
+  "multiEngineHint": {
+    "message": "Bekapcsolva felváltja a fent megadott egyetlen keresőmotort.",
+    "description": "Hint for multi-engine toggle"
+  },
+  "labelCustomName": {
+    "message": "Keresőmotor neve",
+    "description": "Label for custom engine name input"
+  },
+  "labelCustomUrl": {
+    "message": "Keresési URL",
+    "description": "Label for custom engine URL input"
+  },
+  "customUrlErrInvalid": {
+    "message": "Érvénytelen URL. https:// vagy http:// előtaggal kell kezdődnie.",
+    "description": "Validation error when custom URL is not a valid URL"
+  },
+  "customUrlErrProtocol": {
+    "message": "Az URL-nek https:// vagy http:// előtaggal kell kezdődnie.",
+    "description": "Validation error when custom URL has wrong protocol"
+  },
+  "customUrlErrNoQuery": {
+    "message": "Az URL-nek tartalmaznia kell a {query} helyőrzőt, vagy ?q= paraméterrel kell végződnie.",
+    "description": "Validation error when custom URL has no query hook"
+  },
+  "labelHistoryEnabled": {
+    "message": "Keresési előzmények mentése",
+    "description": "Label for history toggle"
+  },
+  "historyEnabledHint": {
+    "message": "Az utolsó 20 keresést menti el.",
+    "description": "Hint for history toggle"
+  },
+  "historyEmpty": {
+    "message": "Még nincsenek keresések.",
+    "description": "Empty state for history tab"
+  },
+  "historyClear": {
+    "message": "Előzmények törlése",
+    "description": "Button to clear search history"
+  },
+  "btnDeleteHistoryItem": {
+    "message": "Törlés",
+    "description": "Tooltip for the delete button on an individual history item"
+  },
+  "historyTimeNow": {
+    "message": "most",
+    "description": "History timestamp: shown when a search was done less than a minute ago"
+  },
+  "historyTimeMinutes": {
+    "message": "$1 perce",
+    "description": "History timestamp: minutes ago. $1 is replaced with the number of minutes"
+  },
+  "historyTimeHours": {
+    "message": "$1 órája",
+    "description": "History timestamp: hours ago. $1 is replaced with the number of hours"
+  },
+  "savedMsg": {
+    "message": "Mentve",
+    "description": "Short confirmation shown after settings are saved"
+  },
+  "aboutName": {
+    "message": "Mark & Find — Beállítások",
+    "description": "About tab label"
+  },
+  "aboutDesc": {
+    "message": "Jelölj ki bármilyen szöveget egy weboldalon, és keresd meg azonnal billentyűparanccsal vagy a helyi menüből.",
+    "description": "About tab description paragraph"
+  },
+  "aboutVersion": {
+    "message": "Verzió",
+    "description": "Version label in About tab"
+  },
+  "aboutTrademark": {
+    "message": "Minden védjegy, logó és márkanév az adott tulajdonos kizárólagos tulajdona. A keresőmotorok ikonjai kizárólag azonosítási célokat szolgálnak.",
+    "description": "Trademark disclaimer"
+  },
+  "contributeTitle": {
+    "message": "Hibát találtál, vagy szeretnél segíteni?",
+    "description": "Heading for contribute section"
+  },
+  "contributeDesc": {
+    "message": "Jelents hibát, vagy járulj hozzá új nyelv hozzáadásával.",
+    "description": "Description for contribute section"
+  },
+  "contributeIssueBtn": {
+    "message": "Új issue megnyitása GitHubon",
+    "description": "Button linking to GitHub Issues"
+  },
+  "linkGithub": {
+    "message": "GitHub",
+    "description": "GitHub link label"
+  },
+  "linkWebsite": {
+    "message": "Weboldal",
+    "description": "Website link label"
+  },
+  "privacyPolicy": {
+    "message": "Adatvédelmi irányelvek",
+    "description": "Privacy policy link label"
+  },
+  "importSuccess": {
+    "message": "A beállítások importálása sikeres volt.",
+    "description": "Confirmation shown after successful import"
+  },
+  "importError": {
+    "message": "Érvénytelen fájl. Kérjük, válasszon érvényes beállításfájlt.",
+    "description": "Error shown after failed import"
+  },
+  "optionsShortcutLabel": {
+    "message": "A te parancsodon",
+    "description": "Label next to the shortcut display in options page"
+  },
+  "optionsShortcutImported": {
+    "message": "Ez a billentyűparancs egy korábbi exportból lett mentve. A tényleges parancsod eltérhet — ellenőrizd a Kiegészítőkezelőben.",
+    "description": "Note shown when shortcut in options page comes from imported settings"
+  },
+  "optionsShortcutMatch": {
+    "message": "Az exportált parancsikon megegyezik a jelenlegivel. Megváltoztathatod a MarkAndFind bővítményben vagy közvetlenül a böngésző bővítménykezelőjében → Bővítmények billentyűparancsainak kezelése.",
+    "description": "Note shown when imported shortcut matches the current one"
+  },
+  "btnResetSettings": {
+    "message": "Alapértelmezések visszaállítása",
+    "description": "Button to reset all settings to their default values"
+  },
+  "resetConfirm": {
+    "message": "Kattints ide a visszaállítás megerősítéséhez",
+    "description": "Confirmation text shown on reset button after first click (3 s window)"
+  },
+  "resetSuccess": {
+    "message": "A beállítások visszaálltak az alapértelmezett értékekre.",
+    "description": "Status message shown after a successful reset"
+  }
+}

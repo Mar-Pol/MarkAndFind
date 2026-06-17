@@ -1,0 +1,409 @@
+{
+  "extDescription": {
+    "message": "Search highlighted text instantly in any search engine, based on your own preferences, anywhere on the web.",
+    "description": "Extension description shown in browser add-on store"
+  },
+  "cmdSearch": {
+    "message": "Search selected text",
+    "description": "Description of the keyboard command"
+  },
+  "contextMenuSearch": {
+    "message": "Search \"%s\"",
+    "description": "Context menu item. %s is replaced with selected text by the browser."
+  },
+  "contextMenuSearchSelected": {
+    "message": "Search \"$1\"",
+    "description": "Context menu title with truncated selected text"
+  },
+  "settingsTab": {
+    "message": "Settings",
+    "description": "Settings tab label"
+  },
+  "historyTab": {
+    "message": "History",
+    "description": "History tab label"
+  },
+  "aboutTab": {
+    "message": "About",
+    "description": "About tab label"
+  },
+  "titleToggleEnabled": {
+    "message": "Enable / Disable",
+    "description": "Tooltip for the main enable/disable toggle in the popup header"
+  },
+  "restrictedPageNotice": {
+    "message": "Keyboard shortcut and auto-search are not available on this page.",
+    "description": "Banner shown in popup when the current tab is a restricted browser page"
+  },
+  "operaSearchPermissionNotice": {
+    "message": "Keyboard shortcut may not work without permission. In Opera, open opera://extensions and enable \"Allow access to search page results\" for this extension.",
+    "description": "Banner shown when Opera blocks content script on search pages. Keep opera://extensions in the text as-is, it will be turned into a clickable link."
+  },
+  "labelSearchEngine": {
+    "message": "Search engine",
+    "description": "Label for search engine selector"
+  },
+  "groupCoreWebSearch": {
+    "message": "Core Web Search",
+    "description": "Search engine group"
+  },
+  "groupPrivacy": {
+    "message": "Privacy-Focused",
+    "description": "Search engine optgroup label"
+  },
+  "groupKnowledge": {
+    "message": "Knowledge",
+    "description": "Search engine optgroup label"
+  },
+  "groupMedia": {
+    "message": "Media",
+    "description": "Search engine optgroup label"
+  },
+  "groupDeveloper": {
+    "message": "Developer",
+    "description": "Search engine group"
+  },
+  "groupCommunity": {
+    "message": "Community",
+    "description": "Search engine group"
+  },
+  "groupAI": {
+    "message": "AI",
+    "description": "Search engine group"
+  },
+  "groupRegional": {
+    "message": "Regional",
+    "description": "Search engine group"
+  },
+  "groupCustom": {
+    "message": "Custom",
+    "description": "Search engine optgroup label"
+  },
+  "customOption": {
+    "message": "Custom engine...",
+    "description": "Option inside the custom engine optgroup"
+  },
+  "kagiOption": {
+    "message": "Kagi (Paid)",
+    "description": "Kagi option label in single engine dropdown"
+  },
+  "groupFavorites": {
+    "message": "Favorites",
+    "description": "Favorites group label"
+  },
+  "favoritesHint": {
+    "message": "★ Star an engine to pin it to the top of the dropdown.",
+    "description": "Hint for favorites feature"
+  },
+  "btnToggleFavorite": {
+    "message": "Toggle favorite",
+    "description": "Tooltip for the star button next to each engine in the multi-engine list"
+  },
+  "btnExportSettings": {
+    "message": "Export settings",
+    "description": "Button to export settings as JSON"
+  },
+  "btnImportSettings": {
+    "message": "Import settings",
+    "description": "Button to import settings from JSON file"
+  },
+  "btnOpenSettings": {
+    "message": "More settings",
+    "description": "Button in popup About tab that opens the options page"
+  },
+  "labelOpenIn": {
+    "message": "Open result in",
+    "description": "Label for open-in selector"
+  },
+  "openNewTab": {
+    "message": "New tab (foreground)",
+    "description": "Open in new foreground tab"
+  },
+  "openBackground": {
+    "message": "New tab (background)",
+    "description": "Open in new background tab"
+  },
+  "openSameTab": {
+    "message": "Same tab",
+    "description": "Open in same tab"
+  },
+  "openPrivate": {
+    "message": "Private window",
+    "description": "Open in private/incognito window"
+  },
+  "privateWarnFirefox": {
+    "message": "Private window requires permission. Open Add-ons Manager, find MarkAndFind and enable Run in Private Windows.",
+    "description": "Warning shown when private window is selected on Firefox"
+  },
+  "privateWarnChrome": {
+    "message": "Private (incognito) window requires permission. Open your browser Extensions settings, find MarkAndFind and enable access to incognito or private windows.",
+    "description": "Warning shown when private window is selected on Chromium based browsers"
+  },
+  "openInMultiHint": {
+    "message": "\"Same tab\" is not available when searching multiple engines at once.",
+    "description": "Hint shown under Open-in select when multi-engine mode is active"
+  },
+  "labelShortcut": {
+    "message": "Keyboard shortcut",
+    "description": "Label for shortcut section"
+  },
+  "shortcutDefault": {
+    "message": "Default shortcut: Ctrl+Shift+F",
+    "description": "Static hint shown below keyboard shortcut section"
+  },
+  "btnChangeShortcut": {
+    "message": "Change",
+    "description": "Button to open browser shortcut manager"
+  },
+  "shortcutClearedBtn": {
+    "message": "No shortcut is set. Click to open shortcut settings.",
+    "description": "Text shown inside shortcut button when shortcut is cleared"
+  },
+  "shortcutManualHint": {
+    "message": "To change the shortcut, go to your browser's extension settings and look for keyboard shortcuts.",
+    "description": "Fallback hint shown when browser blocks opening the shortcuts page."
+  },
+  "shortcutSettingsNotSupported": {
+    "message": "Opening shortcut settings is not supported by your browser. Go to: Menu → Add-ons → Gear icon → Manage Add-on Shortcuts.",
+    "description": "Error message shown in the popup when the browser version is too old to natively support opening the shortcut configuration settings directly."
+  },
+  "labelAutoSearch": {
+    "message": "Auto-search on selection",
+    "description": "Label for auto-search toggle"
+  },
+  "autoSearchHint": {
+    "message": "Automatically searches after you stop selecting text.",
+    "description": "Hint for auto-search feature"
+  },
+  "labelAutoDelay": {
+    "message": "Delay",
+    "description": "Label for auto-search delay input"
+  },
+  "delayUnit": {
+    "message": "s",
+    "description": "Seconds unit label next to delay input"
+  },
+  "labelSearchOperator": {
+    "message": "Search operator",
+    "description": "Label for search operator selector"
+  },
+  "operatorPanelHint": {
+    "message": "Add operators to narrow your results. Hover over each for details.",
+    "description": "Hint below the search operator toggle"
+  },
+  "operatorUnavailable": {
+    "message": "Not supported by the selected search engine.",
+    "description": "Hint shown when the selected operator is not available for current engine"
+  },
+  "operatorSite": {
+    "message": "Current domain only",
+    "description": "site: operator option"
+  },
+  "operatorHintSite": {
+    "message": "Searches only on the current page domain.",
+    "description": "Hint for site: operator"
+  },
+  "operatorIntitle": {
+    "message": "Keyword in page title",
+    "description": "intitle: operator option"
+  },
+  "operatorHintIntitle": {
+    "message": "Returns pages where the selected text appears in the page title.",
+    "description": "Hint for intitle: operator"
+  },
+  "operatorInurl": {
+    "message": "Keyword in URL",
+    "description": "inurl: operator option"
+  },
+  "operatorHintInurl": {
+    "message": "Returns pages where the selected text appears in the URL.",
+    "description": "Hint for inurl: operator"
+  },
+  "operatorFiletype": {
+    "message": "Search by file type",
+    "description": "filetype: operator option"
+  },
+  "operatorHintFiletype": {
+    "message": "Select text and search for files of the selected type (e.g. PDF, DOC, or TXT).",
+    "description": "Hint for filetype: operator"
+  },
+  "operatorExact": {
+    "message": "Exact phrase match",
+    "description": "exact phrase operator option"
+  },
+  "operatorHintExact": {
+    "message": "Wraps the selected text in quotes for an exact phrase search.",
+    "description": "Hint for exact operator"
+  },
+  "operatorGoogleSectionLabel": {
+    "message": "Google only",
+    "description": "Divider label for Google-specific operators section"
+  },
+  "operatorNoai": {
+    "message": "Exclude AI results",
+    "description": "-AI operator, Google only"
+  },
+  "operatorHintNoai": {
+    "message": "Appends -\"AI\" to exclude AI-generated results.",
+    "description": "Hint for -AI operator"
+  },
+  "operatorUdm14": {
+    "message": "Web-only results",
+    "description": "udm=14 operator label, Google only"
+  },
+  "operatorHintUdm14": {
+    "message": "Shows only traditional web links. No AI overviews, knowledge panels or shopping cards.",
+    "description": "Hint for udm=14 operator"
+  },
+  "labelCleanup": {
+    "message": "Clean up selected text"
+  },
+  "cleanupHint": {
+    "message": "Removes junk characters from selections before searching."
+  },
+  "cleanupWhitespace": {
+    "message": "Remove extra spaces and line breaks"
+  },
+  "cleanupLocale": {
+    "message": "Remove language tag (like EN)"
+  },
+  "cleanupSeparators": {
+    "message": "Remove leading/trailing separators (|, •, –)"
+  },
+  "labelMultiEngine": {
+    "message": "Search in multiple engines at once",
+    "description": "Label for multi-engine section"
+  },
+  "multiEngineHint": {
+    "message": "When enabled, overrides the single engine above.",
+    "description": "Hint for multi-engine toggle"
+  },
+  "labelCustomName": {
+    "message": "Engine name",
+    "description": "Label for custom engine name input"
+  },
+  "labelCustomUrl": {
+    "message": "Search URL",
+    "description": "Label for custom engine URL input"
+  },
+  "customUrlErrInvalid": {
+    "message": "Not a valid URL. Must start with https:// or http://",
+    "description": "Validation error when custom URL is not a valid URL"
+  },
+  "customUrlErrProtocol": {
+    "message": "URL must start with https:// or http://",
+    "description": "Validation error when custom URL has wrong protocol"
+  },
+  "customUrlErrNoQuery": {
+    "message": "URL should contain {query} or end with a query parameter like ?q=",
+    "description": "Validation error when custom URL has no query hook"
+  },
+  "labelHistoryEnabled": {
+    "message": "Save search history",
+    "description": "Label for history toggle"
+  },
+  "historyEnabledHint": {
+    "message": "Stores up to 20 recent searches.",
+    "description": "Hint for history toggle"
+  },
+  "historyEmpty": {
+    "message": "No searches yet.",
+    "description": "Empty state for history tab"
+  },
+  "historyClear": {
+    "message": "Clear history",
+    "description": "Button to clear search history"
+  },
+  "btnDeleteHistoryItem": {
+    "message": "Delete",
+    "description": "Tooltip for the delete button on an individual history item"
+  },
+  "historyTimeNow": {
+    "message": "now",
+    "description": "History timestamp: shown when a search was done less than a minute ago"
+  },
+  "historyTimeMinutes": {
+    "message": "$1m",
+    "description": "History timestamp: minutes ago. $1 is replaced with the number of minutes"
+  },
+  "historyTimeHours": {
+    "message": "$1h",
+    "description": "History timestamp: hours ago. $1 is replaced with the number of hours"
+  },
+  "savedMsg": {
+    "message": "Saved",
+    "description": "Short confirmation shown after settings are saved"
+  },
+  "aboutName": {
+   "message": "Mark & Find — Settings",
+   "description": "About tab label"
+  },
+  "aboutDesc": {
+    "message": "Select any text on a webpage and instantly search it via keyboard shortcut or right-click menu.",
+    "description": "About tab description paragraph"
+  },
+  "aboutVersion": {
+    "message": "Version",
+    "description": "Version label in About tab"
+  },
+  "aboutTrademark": {
+    "message": "All trademarks, logos and brand names are the property of their respective owners. Search engine icons are used for identification purposes only.",
+    "description": "Trademark disclaimer"
+  },
+  "contributeTitle": {
+    "message": "Found a bug or want to help?",
+    "description": "Heading for contribute section"
+  },
+  "contributeDesc": {
+    "message": "Report a bug or contribute a new language.",
+    "description": "Description for contribute section"
+  },
+  "contributeIssueBtn": {
+    "message": "Open an Issue on GitHub",
+    "description": "Button linking to GitHub Issues"
+  },
+  "linkGithub": {
+    "message": "GitHub",
+    "description": "GitHub link label"
+  },
+  "linkWebsite": {
+    "message": "My Website",
+    "description": "Website link label"
+  },
+  "privacyPolicy": {
+    "message": "Privacy Policy",
+    "description": "Privacy policy link label"
+  },
+  "importSuccess": {
+    "message": "Settings imported successfully.",
+    "description": "Confirmation shown after successful import"
+  },
+  "importError": {
+    "message": "Invalid file. Please select a valid settings file.",
+    "description": "Error shown after failed import"
+  },
+  "optionsShortcutLabel": {
+    "message": "Keyboard shortcut:",
+    "description": "Label next to the shortcut display in options page"
+  },
+  "optionsShortcutImported": {
+    "message": "This shortcut was saved from a previous export. Your actual shortcut is different. Change it in MarkAndFind addon or directly in your browser's Add-ons Manager → Manage Extension Shortcuts.",
+    "description": "Note shown when imported shortcut differs from the current one"
+  },
+  "optionsShortcutMatch": {
+    "message": "The exported shortcut matches your current one. Change it in MarkAndFind addon or directly in your browser's Add-ons Manager → Manage Extension Shortcuts.",
+    "description": "Note shown when imported shortcut matches the current one"
+  },
+  "btnResetSettings": {
+    "message": "Reset to defaults",
+    "description": "Button to reset all settings to their default values"
+  },
+  "resetConfirm": {
+    "message": "Confirm reset by clicking here",
+    "description": "Confirmation text shown on reset button after first click (3 s window)"
+  },
+  "resetSuccess": {
+    "message": "Settings reset to defaults.",
+    "description": "Status message shown after a successful reset"
+  }
+}
