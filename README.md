@@ -23,7 +23,7 @@
 
 | Browser family | Download |
 |---|---|
-| Gecko-based (Firefox, Zen, LibreWolf, …) | Available after approval |
+| Gecko-based (Firefox, Zen, LibreWolf, …) | [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/mark-and-find/) |
 | Chromium-based (Chrome, Edge, Opera, Brave, Vivaldi, …) | [Chrome Web Store](https://chromewebstore.google.com/detail/markandfind/fienkdchnfljpljfnmojbodlaopjicme) |
 
 ## FAQ
