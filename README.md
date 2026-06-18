@@ -28,7 +28,7 @@
     <th>Download</th>
   </tr>
   <tr>
-    <td>Gecko-based (Firefox, Zen, LibreWolf, …)</td>
+    <td>Gecko-based (Firefox, Zen Browser, LibreWolf, …)</td>
     <td align="center">1.1.1</td>
     <td><a href="https://addons.mozilla.org/firefox/addon/mark-and-find/">Firefox Add-ons</a></td>
   </tr>
