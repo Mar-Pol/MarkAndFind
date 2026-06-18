@@ -21,10 +21,25 @@
 
 ## Installation
 
-| Browser family | Download |
-|---|---|
-| Gecko-based (Firefox, Zen, LibreWolf, …) | [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/mark-and-find/) |
-| Chromium-based (Chrome, Edge, Opera, Brave, Vivaldi, …) | [Chrome Web Store](https://chromewebstore.google.com/detail/markandfind/fienkdchnfljpljfnmojbodlaopjicme) |
+<table>
+  <tr>
+    <th>Browser family</th>
+    <th align="center">Version</th>
+    <th>Download</th>
+  </tr>
+  <tr>
+    <td>Gecko-based (Firefox, Zen, LibreWolf, …)</td>
+    <td align="center">1.1.1</td>
+    <td><a href="https://addons.mozilla.org/firefox/addon/mark-and-find/">Firefox Add-ons</a></td>
+  </tr>
+  <tr>
+    <td>Chromium-based (Chrome, Edge, Opera, Brave, Vivaldi, …)</td>
+    <td align="center">1.1.0</td>
+    <td><a href="https://chromewebstore.google.com/detail/markandfind/fienkdchnfljpljfnmojbodlaopjicme">Chrome Web Store</a></td>
+  </tr>
+</table>
+
+> <code>Gecko v1.1.1</code> and <code>Chromium v1.1.0</code> are the same extension build.
 
 ## FAQ
 
